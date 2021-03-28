@@ -1,0 +1,40 @@
+Nume student propunator: Neagu Cezara-Teodora
+Grupa: 225
+
+Ce afiseaza urmatoarea secventa de cod?
+a.MyDerivedException.finally
+b.MyException.MyDerivedExcepion
+c.eroare
+d.finally.
+
+
+public class MyException extends Exception{}
+
+public class MyDerivedException extends MyException{}
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+	    try
+        {
+            throw new MyDerivedException();
+        }
+       
+        catch(MyException mExc)
+        {
+            System.out.println("MyException.");
+        }
+         catch(MyDerivedException mExc)
+       {
+           System.out.println("MyDerivedException.");
+        }
+	finally{
+	System.out.println("finally.");
+	}
+	
+	}
+}
+
+Raspuns corect: c).
+Se produce o eroare deoarece MyDerivedException este derivata din MyException(exceptia a fost deja prinsa) si nu se afiseaza nimic.

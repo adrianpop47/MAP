@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <TableView fx:id="tableViewOffers" layoutX="458.0" layoutY="71.0" prefHeight="330.0" prefWidth="303.0">
+        <columns>
+          <TableColumn fx:id="tableColumnOfferName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="tableColumnLocation" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="tableColumnStartDate" prefWidth="75.0" text="StartDate" />
+            <TableColumn fx:id="tableColumnEndDate" prefWidth="75.0" text="EndDate" />
+        </columns>
+      </TableView>
+      <Label layoutX="187.0" layoutY="5.0" prefHeight="18.0" prefWidth="58.0" text="Location" />
+      <TableView fx:id="tableViewHotel" layoutX="-1.0" layoutY="71.0" prefHeight="326.0" prefWidth="454.0">
+        <columns>
+            <TableColumn fx:id="tableColumnHotelId" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="tableColumnLocationId" prefWidth="75.0" text="LocationId" />
+          <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="tableColumnRooms" prefWidth="75.0" text="NoRooms" />
+            <TableColumn fx:id="tableColumnPrice" prefWidth="75.0" text="PricePerNight" />
+            <TableColumn fx:id="tableColumnType" prefWidth="75.0" text="Type" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="locationComboBox" layoutX="115.0" layoutY="32.0" prefHeight="26.0" prefWidth="185.0" />
+   </children>
+</AnchorPane>

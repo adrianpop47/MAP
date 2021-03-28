@@ -1,0 +1,36 @@
+Student propunator: Olănescu Monica
+Grupa:225
+
+public class Program
+{
+public static void Main(string[] args)
+{            
+  try 
+  {
+     int []arr = {1, 2, 3, 4, 5};
+     for (int i = 0; i < 5; ++i) 
+     Console.WriteLine(arr[i]);
+     int val = (1 / Convert.ToInt32(0));
+  }
+  catch(IndexOutOfRangeException e) 
+  {
+    Console.WriteLine("A");        	
+  }
+  catch(ArithmeticException e) 
+  {     	
+    Console.WriteLine("B");
+  }
+  Console.ReadLine();
+
+}
+}
+
+Variante:
+a) 1234
+b) Runtime Error
+c) 12345A
+d) 12345B
+
+Raspuns corect d) 
+Se va arunca exceptia din cauza impartirii la 0.
+DivideByZeroException este derivata din ArithmeticException.

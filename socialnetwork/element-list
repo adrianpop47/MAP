@@ -1,0 +1,9 @@
+socialnetwork
+socialnetwork.domain
+socialnetwork.repository
+socialnetwork.repository.file
+socialnetwork.repository.memory
+socialnetwork.service
+socialnetwork.ui
+socialnetwork.utils
+socialnetwork.validator

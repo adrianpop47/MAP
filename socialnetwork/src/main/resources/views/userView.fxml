@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.UserController">
+   <children>
+      <SplitPane prefHeight="400.0" prefWidth="368.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane prefHeight="300.0" prefWidth="369.0">
+               <children>
+                  <TableView fx:id="tableViewFriends" prefHeight="230.0" prefWidth="368.0" AnchorPane.bottomAnchor="0.8000000000000114" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnFirstName" prefWidth="138.4000000357628" text="FirstName" />
+                      <TableColumn fx:id="tableColumnLastName" prefWidth="124.00001525878906" text="LastName" />
+                        <TableColumn fx:id="tableColumnDate" minWidth="0.0" prefWidth="106.20001220703125" text="Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <TableView fx:id="tableViewUsers" layoutX="370.0" layoutY="200.0" prefHeight="207.0" prefWidth="231.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="-1.0">
+        <columns>
+            <TableColumn fx:id="tableColumnIdUser" prefWidth="42.199951171875" text="Id" />
+          <TableColumn fx:id="tableColumnFirstNameUser" prefWidth="108.20004272460938" text="FirstName" />
+          <TableColumn fx:id="tableColumnLastNameUser" prefWidth="79.0" text="LastName" />
+        </columns>
+      </TableView>
+      <Button fx:id="addFriendButton" layoutX="388.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleAddFriendButton" prefHeight="26.0" prefWidth="92.0" text="AddFriend" />
+      <Button fx:id="removeFriendButton" layoutX="479.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleRemoveFriendButton" text="RemoveFriend" />
+      <Label layoutX="387.0" layoutY="50.0" text="FirstName" />
+      <Label layoutX="388.0" layoutY="75.0" text="LastName" />
+      <TextField fx:id="textFieldFirstName" layoutX="451.0" layoutY="46.0" />
+      <TextField fx:id="textFieldLastName" layoutX="451.0" layoutY="71.0" />
+      <Button fx:id="showRequestsButton" layoutX="388.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleShowFriendRequests" prefHeight="26.0" prefWidth="184.0" text="Show friend requests" />
+      <Button fx:id="messagesButton" layoutX="388.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleMessagesButton" prefHeight="26.0" prefWidth="184.0" text="Messages" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.RequestsController">
+   <children>
+   <TableView fx:id="tableViewRequests" layoutX="3.0" layoutY="108.0" prefHeight="293.0" prefWidth="314.0">
+     <columns>
+       <TableColumn fx:id="tableColumnFirstName" prefWidth="75.0" text="FirstName" />
+       <TableColumn fx:id="tableColumnLastName" prefWidth="75.0" text="LastName" />
+            <TableColumn fx:id="tableColumnDate" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="tableColumnStatus" prefWidth="88.0000061035156" text="Status" />
+     </columns>
+   </TableView>
+      <Label layoutX="72.0" layoutY="90.0" text="Received Friend Reuqests" />
+      <TableView fx:id="tableViewRequestsSent" layoutX="324.0" layoutY="107.0" prefHeight="294.0" prefWidth="307.0">
+         <columns>
+            <TableColumn fx:id="tableColumnFirstNameSent" prefWidth="75.0" text="FirstName" />
+            <TableColumn fx:id="tableColumnLastNameSent" prefWidth="75.0" text="LastName" />
+            <TableColumn fx:id="tableColumnDateSent" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="tableColumnStatusSent" prefWidth="80.80003662109374" text="Status" />
+         </columns>
+      </TableView>
+      <Label layoutX="413.0" layoutY="89.0" prefHeight="18.0" prefWidth="113.0" text="Sent Friend Requests" />
+      <Button fx:id="acceptButton" mnemonicParsing="false" onAction="#handleAcceptButton" text="Accept" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Button fx:id="rejectButton" layoutX="30.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleRejectButton" text="Reject" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="cancelButton" layoutX="324.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleCancelButton" text="Cancel Request" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+I.
+
+Avand un container generic de tipul stiva
+(declarat Stack<Integer> stack = new Stack<Integer>();)
+care dintre urmatoarele instructiuni nu poate fi folosita pentru adaugarea unui intreg?
+
+a) stack.push(new Integer(10))
+
+b) stack.push(10);
+
+c) int a=10;
+   stack.push(a);
+
+d) toate metodele mentionate anterior sunt corecte
+
+Raspuns: d
+
+Un obiect de tipul singleton trebuie sa aiba doar 2 functii: constructorul si functia getInstance.
+Cum arata antetul acestor functii?
+a) public static Singleton(){...}; 
+   public static Singleton getInstance(){...};
+
+b) private static Singleton(){...}; 
+   public static Singleton getInstance(){...};
+
+c) public static Singleton(){...}; 
+   private static Singleton getInstance(){...};
+
+d) private static Singleton(){...}; 
+   private static Singleton getInstance(){...};
+
+Raspuns: b

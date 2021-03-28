@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OfferController">
+   <children>
+      <TableView fx:id="tableViewOffer" prefHeight="400.0" prefWidth="376.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tableColumnHotelId" prefWidth="75.0" text="HotelId" />
+            <TableColumn fx:id="tableColumnStartDate" prefWidth="75.0" text="StartDate" />
+            <TableColumn fx:id="tableColumnEndDate" prefWidth="75.0" text="EndDate" />
+            <TableColumn fx:id="tableColumnPercents" prefWidth="75.0" text="Percents" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="datePickerStart" layoutX="411.0" layoutY="39.0" prefHeight="22.0" prefWidth="174.0" />
+      <Label layoutX="411.0" layoutY="22.0" text="Start Date" />
+      <Label layoutX="411.0" layoutY="65.0" text="End Date" />
+      <DatePicker fx:id="datePickerEnd" layoutX="411.0" layoutY="83.0" prefHeight="22.0" prefWidth="174.0" />
+      <Button fx:id="buttonReservation" layoutX="410.0" layoutY="135.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Make a reservation" onAction="#handleReservationButton"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+﻿Student  propunător: Neacsu Andreea-Maria     Grupa:225       Email:andreeaneacsu33@gmail.com
+
+class Test
+{
+    String str = "a";
+ 
+    void A()
+    {
+        try
+        {
+            str +="b";
+            B();
+        }
+        catch (Exception e)
+        {
+            str += "c";
+        }
+    }
+ 
+    void B() throws Exception
+    {
+        try
+        {
+            str += "d";
+            C();
+        }
+        catch(Exception e)
+        {
+            throw new Exception();
+        }
+        finally
+        {
+            str += "e";
+        }
+ 
+        str += "f";
+ 
+    }
+     
+    void C() throws Exception
+    {
+        throw new Exception();
+    }
+ 
+    void display()
+    {
+        System.out.println(str);
+    }
+ 
+    public static void main(String[] args)
+    {
+        Test object = new Test();
+        object.A();
+        object.display();
+    }
+ 
+}
+
+Ce se va afisa in urma executarii programului?
+a) abdef
+b) abdec
+c) abdefc
+
+
+Raspuns:
+b) Folosim throw pentru a arunca o exceptie, iar finally pentru a executa cod indiferent daca s-a aruncat exceptia sau nu. str="a" initial, in metoda A() str="ab",
+in metoda B() str="abd", se arunca exceptie in metoda C() care este prinsa in blocul catch(Exception e) din metoda B(), unde se arunca o noua exceptie, dar mai intai
+se executa codul din blocul finally str="abde", se prinde exceptia in clasa A() iar str="abdec", deci se va afisa "abdec".

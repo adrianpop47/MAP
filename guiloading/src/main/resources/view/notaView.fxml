@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="654.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NotaController">
+   <children>
+      <SplitPane layoutX="172.0" layoutY="180.0" prefHeight="654.0" prefWidth="445.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="536.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tableViewNote" prefHeight="398.0" prefWidth="324.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnName" prefWidth="138.0" text="Student" />
+                      <TableColumn fx:id="tableColumnTema" prefWidth="105.0" text="Tema" />
+                        <TableColumn fx:id="tableColumnNota" prefWidth="154.0" text="Nota" />
+                        <TableColumn fx:id="tableColumnProfesor" prefWidth="154.0" text="Profesor" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Button layoutX="465.0" layoutY="150.0" mnemonicParsing="false" onAction="#handlClickButtonCounter" text="Counter" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0" />
+      <TextField fx:id="textFieldTema" layoutX="818.0" layoutY="206.0" AnchorPane.rightAnchor="53.99999999999994" />
+      <Label layoutX="782.0" layoutY="210.0" text="Tema" AnchorPane.rightAnchor="209.19999999999996" />
+      <Label layoutX="782.0" layoutY="239.0" text="Nota" AnchorPane.rightAnchor="209.19999999999996" />
+      <Label layoutX="782.0" layoutY="268.0" text="Nume" AnchorPane.rightAnchor="209.19999999999996" />
+      <TextField fx:id="textFieldNota" layoutX="818.0" layoutY="235.0" AnchorPane.rightAnchor="53.99999999999994" />
+      <TextField fx:id="textFieldNume" layoutX="818.0" layoutY="264.0" AnchorPane.rightAnchor="53.99999999999994" />
+      <TextField fx:id="textFieldDisplayNumber" layoutX="872.0" layoutY="142.0" AnchorPane.rightAnchor="-5.6843418860808015E-14" />
+   </children>
+</AnchorPane>

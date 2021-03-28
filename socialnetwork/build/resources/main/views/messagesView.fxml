@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.MessagesController">
+   <children>
+      <SplitPane prefHeight="278.0" prefWidth="301.0">
+         <items>
+            <TableView fx:id="tableViewFriends" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                  <TableColumn fx:id="tableColumnFirstName" prefWidth="145.5999877929687" text="First Name" />
+                <TableColumn fx:id="tableColumnLastName" prefWidth="156.00001525878906" text="Last Name" />
+              </columns>
+            </TableView>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="298.0" prefHeight="278.0" prefWidth="302.0">
+         <items>
+            <TableView fx:id="tableViewMessages" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="tableColumnFrom" prefWidth="86.99999694824237" text="From" />
+                <TableColumn fx:id="tableColumnMessage" prefWidth="129.0" text="Message" />
+                  <TableColumn fx:id="tableColumnDate" prefWidth="76.80000305175781" text="Date" />
+              </columns>
+            </TableView>
+         </items></SplitPane>
+      <TextField fx:id="messageTextField" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="300.0" />
+      <Button fx:id="sendMessageButton" mnemonicParsing="false" text="Send Message" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="330.0" onAction="#handleMessageButton"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+﻿1,Sorin Ovidiu,Scoala Gimnaziala “Horea”,1
+2,Andrei Marian,Scoala Gimnaziala “Horea”,1
+3,Popa Cristian,Scoala Gimnaziala “Horea”,1
+4,Andrei Pop,Scoala Gimnaziala "Octavian Goga",2
+5,Vasile Moldovan,Scoala Gimnaziala "Octavian Goga",2
+6,Ureche Sergiu,Scoala Gimnaziala "Octavian Goga",2
+7,Andrei Vasile,Liceul Teoretic "Lucian Blaga",3
+8,Radu Moldovan,Liceul Teoretic "Lucian Blaga",3
+9,Mihai Alexandrescu,Liceul Teoretic "Lucian Blaga",3
+10,Roman Marian,Scoala Gimnaziala "Ioan Bob",4
+11,Muresan Alexandru,Scoala Gimnaziala "Ioan Bob",4
+12,Marginean Viorel,Scoala Gimnaziala "Ioan Bob",4
+13,Macarie Alex,Scoala Gimnaziala "Ion Creanga",5
+14,Blaga Mircea,Scoala Gimnaziala "Ion Creanga",5
+15,Rus Sorin,Scoala Gimnaziala "Ion Creanga",5

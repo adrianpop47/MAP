@@ -1,0 +1,10 @@
+  1. Ce operator executa un downcast care se evalueaza la null in cazul in care 
+nu se poate face downcastul?
+ a) operatorul is
+ b) operatorul as
+Raspuns: b.
+
+ 2. Cand sunt generati delegatii (delegates)?
+ a) runntime
+ b) la compilare
+ c)sunt generati de catre utilizator

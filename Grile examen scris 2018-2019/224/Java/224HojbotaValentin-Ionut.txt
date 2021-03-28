@@ -1,0 +1,62 @@
+Hojbota Valentin-Ionut
+Grupa 224
+ionutz.hojbota@gmail.com
+
+
+Ce afiseaza programul urmator?
+public class Stack<E> {
+    private E[] items = new E[100]();
+    private int size = 0;
+
+    public void push(E e){
+        items[size] = e;
+        size += 1;
+    }
+
+    public E pop(){
+        size -=1;
+        E e = items[size];
+        items[size] = null;
+        return e;
+    }
+}
+
+// intr-o metoda main
+Stack<Integer> e = new Stack<>();
+e.push(10);
+e.push(5);
+System.out.println(e.pop());
+
+a) 5
+b) 10
+c) Error ------
+d) 5 10
+
+
+private E[] items = new E[100](); // eroare
+E[] items=(E[])new Object[20]; //O varianta corecta de a rescrie linia de cod
+
+
+
+Ce afiseaza programul urmator?
+// intr-o metoda main
+Person s = new Student("Alice");
+Person p = new Person("Bob");
+InfoManager m = new InfoManager();
+System.out.println(m.printInfo(s) +"; " + m.printInfo(p));
+ 
+// in clasa InfoManager
+public String printInfo(Person p){
+  return "Person " + p.getName();
+}
+ 
+public String printInfo(Student s){
+  return "Student " + s.getName();
+}
+
+a) Person Bob; Student Alice
+b) Person Alice; Person Bob    -------
+c) Student Alice; Student Bob
+d) Student Alice; Person Bob
+
+Si s si p sunt de tipul Person chiar daca s este un pointer spre tipul Student

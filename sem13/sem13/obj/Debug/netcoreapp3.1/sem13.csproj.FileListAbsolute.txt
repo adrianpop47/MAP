@@ -1,0 +1,13 @@
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\bin\Debug\netcoreapp3.1\sem13.exe
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\bin\Debug\netcoreapp3.1\sem13.deps.json
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\bin\Debug\netcoreapp3.1\sem13.runtimeconfig.json
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\bin\Debug\netcoreapp3.1\sem13.runtimeconfig.dev.json
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\bin\Debug\netcoreapp3.1\sem13.dll
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\bin\Debug\netcoreapp3.1\sem13.pdb
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\obj\Debug\netcoreapp3.1\sem13.csprojAssemblyReference.cache
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\obj\Debug\netcoreapp3.1\sem13.AssemblyInfoInputs.cache
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\obj\Debug\netcoreapp3.1\sem13.AssemblyInfo.cs
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\obj\Debug\netcoreapp3.1\sem13.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\obj\Debug\netcoreapp3.1\sem13.dll
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\obj\Debug\netcoreapp3.1\sem13.pdb
+C:\Users\Adrian\Desktop\Facultate\MAP\sem13\sem13\obj\Debug\netcoreapp3.1\sem13.genruntimeconfig.cache

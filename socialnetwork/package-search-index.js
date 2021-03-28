@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"socialnetwork"},{"l":"socialnetwork.domain"},{"l":"socialnetwork.repository"},{"l":"socialnetwork.repository.file"},{"l":"socialnetwork.repository.memory"},{"l":"socialnetwork.service"},{"l":"socialnetwork.ui"},{"l":"socialnetwork.utils"},{"l":"socialnetwork.validator"}];updateSearchResults();

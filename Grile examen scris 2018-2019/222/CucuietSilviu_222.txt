@@ -1,0 +1,63 @@
+Cuvinte cheie:static, bloc static, metoda statica, singleton
+
+
+Autor : Cucuiet Silviu - Mihnea
+
+
+Ce va afisa urmatorul program?
+
+a)ABFECD
+b)BECADF
+c)BFECAD <- Raspunsul corect
+d)ABECDF
+
+Explicatie:
+    Blocurile statice se executa
+        -inaintea functiilor statice,
+        -inaintea unu constructor(deci si a functiilor de instanta)
+        -in ordinea in care au fost scrise
+    Ordinea corecta:
+    B - blocul static
+    F - blocul static
+    E - metoda getInstance
+    C - blocul static
+    A - constructor
+    D - bloc static
+
+public class Main {
+
+    public static void main(String[] args) {
+        Ying ying = Ying.getInstance();
+    }
+}
+class Ying{
+
+    private Ying(){
+        System.out.print("A");
+    }
+
+    static {
+        System.out.print("B");
+    }
+
+    private static class Yang{
+
+        static {
+            System.out.print("C");
+        }
+        private static final Ying ying = new Ying();
+        static {
+            System.out.print("D");
+        }
+    }
+
+    public static Ying getInstance(){
+        System.out.print("E");
+        return Yang.ying;
+    }
+
+    static {
+        System.out.print("F");
+    }
+
+}

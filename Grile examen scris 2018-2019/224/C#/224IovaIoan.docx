@@ -1,0 +1,34 @@
+Ce se va afisa in urma executarii urmatorului cod?
+
+class Program
+    {
+        public delegate T sum<T>(T a, T b, T c);
+
+        static void Main(string[] args)
+        {
+            sum<int> nr = numbers;
+            Console.Write(nr(1, 2, 3));
+            sum<string> wr = words;
+            Console.Write(words("a", "b", "c"));
+            Console.ReadKey();
+        }
+
+        public static int numbers(int a, int b, int c)
+        {
+            return a + b + c;
+        }
+
+        public static string words(string a, string b, string c)
+        {
+            return a + b + c;
+        }
+    }
+
+
+a) 6
+b) 6abc
+b) Eroare la linia 3
+c) Eroare la linia 7
+
+
+Obiectul sum<int> nr implementeaza metoda numbers, iar obiectul sum<string> wr implementeaza metoda words. Metodele se apeleaza pentru parametrii 1, 2, 3, respective “a”, “b”, “c”. Astfel se va afisa pe ecran 6abc.

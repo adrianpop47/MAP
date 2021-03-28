@@ -1,0 +1,34 @@
+socialnetwork/domain/Entity.java
+ socialnetwork.domain.Entity
+socialnetwork/repository/file/UtilizatorFile.java
+ socialnetwork.repository.file.UtilizatorFile
+socialnetwork/validator/UtilizatorValidator.java
+ socialnetwork.validator.UtilizatorValidator
+socialnetwork/repository/memory/InMemoryRepository.java
+ socialnetwork.repository.memory.InMemoryRepository
+socialnetwork/domain/Utilizator.java
+ socialnetwork.domain.Utilizator
+socialnetwork/repository/file/AbstractFileRepository.java
+ socialnetwork.repository.file.AbstractFileRepository
+socialnetwork/repository/Repository.java
+ socialnetwork.repository.Repository
+socialnetwork/validator/Validator.java
+ socialnetwork.validator.Validator
+socialnetwork/validator/ValidationException.java
+ socialnetwork.validator.ValidationException
+socialnetwork/ui/Console.java
+ socialnetwork.ui.Console
+socialnetwork/validator/PrietenieValidator.java
+ socialnetwork.validator.PrietenieValidator
+socialnetwork/service/UtilizatorService.java
+ socialnetwork.service.UtilizatorService
+socialnetwork/domain/Prietenie.java
+ socialnetwork.domain.Prietenie
+socialnetwork/service/PrietenService.java
+ socialnetwork.service.PrietenService
+socialnetwork/service/ServiceManager.java
+ socialnetwork.service.ServiceManager
+socialnetwork/repository/file/PrietenFile.java
+ socialnetwork.repository.file.PrietenFile
+socialnetwork/Main.java
+ socialnetwork.Main
